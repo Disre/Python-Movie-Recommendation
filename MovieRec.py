@@ -1,4 +1,4 @@
-import numpy as np
+#import numpy as np
 import pandas as pd 
 
 from sklearn.neighbors import KNeighborsClassifier 
@@ -262,7 +262,7 @@ class window(QWidget):
         for m in mov[0]:
             if i == 10:
                 break
-            x = movies.ix[m].squeeze()
+            x = movies.iloc[m].squeeze()
 
             already = False
             for movie in selected:
